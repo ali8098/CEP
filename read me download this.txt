@@ -1,0 +1,24 @@
+read me
+download this library libcurl zenity cornjobs gcc
+now to execute code first right these commands
+ gcc complex.c report_generator.c report_email_sender.c -o environment_program -lcurl -lm
+
+this will make environment_program as an executable file 
+then write
+ chmod +x weather.sh
+
+ chmod +x real_time_alerts.sh
+ 
+ then make a cron jobs command 
+ crontab -e
+ 1)nano
+
+/var/log/weather_cron.log
+0 0,6,12,18 * * * /bin/bash /home/ali8098/Desktop/cew_project/cew.1/cew_whole/weather.sh >> /var/log/weather_cron.log 2>&1
+0 0,4,8,12,16,20 * * * /bin/bash /home/ali8098/Desktop/cew_project/cew.1/cew_whole/real_time_alerts.sh >> /var/log/weather_cron.log 2>&1
+
+
+this will make a new file in logs and will display logs 
+ 
+
+
